@@ -5,8 +5,10 @@ package examples.lib;
 option go_package = "github.com/bazelbuild/rules_go/examples/proto/lib/lib_proto";
 
 import "examples/proto/dep/useful.proto";
+import "examples/proto/gostyle/gostyle.gen.proto";
 
 message LibObject {
   very.useful.VeryUseful very_useful = 1;
   int32 are_you_sure = 2;
+  gostyle.GoStyleObject check = 3;
 }
